@@ -4,6 +4,7 @@ import { Tabs } from "antd";
 import StudentTable from "./StudentTable";
 import Courses from "./Courses";
 import FacultyTable from "./FacultyTable";
+import Department from "./components/Department/Department";
 
 const tabs = [
   {
@@ -18,12 +19,21 @@ const tabs = [
     tab: "Faculties",
     component: <FacultyTable />,
   },
+  {
+    tab: "Department",
+    component: <Department />,
+  },
 ];
 
 const TabBar = () => (
   <Tabs
     defaultActiveKey="2"
-    items={[AppleOutlined, AndroidOutlined, AndroidOutlined].map((Icon, i) => {
+    items={[
+      AppleOutlined,
+      AndroidOutlined,
+      AndroidOutlined,
+      AndroidOutlined,
+    ].map((Icon, i) => {
       return {
         label: (
           <span>

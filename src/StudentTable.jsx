@@ -146,7 +146,7 @@ const StudentTable = () => {
       </Button>
       <Modal
         title="Add Student"
-        visible={isModalVisible}
+        open={isModalVisible}
         onCancel={handleCancel}
         footer={null}
       >
